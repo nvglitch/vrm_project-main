@@ -1769,7 +1769,7 @@ bones/219/rotation = Quaternion(0.0105706, 0.683322, -0.729439, -0.029654)
 bones/220/rotation = Quaternion(-5.27551e-08, 0.997981, 0.0635122, -1.0823e-08)
 
 [node name="Head" parent="Player3D/VRM_Visuals/Armature_POPY/GeneralSkeleton" index="15"]
-transform = Transform3D(0.998188, -0.0486729, -0.0353851, 0.0487505, 0.99881, 0.00133409, 0.0352781, -0.0030567, 0.999373, -0.00429735, 1.37077, 0.0152704)
+transform = Transform3D(0.998188, -0.048673, -0.035385, 0.0487507, 0.99881, 0.00133428, 0.0352779, -0.00305691, 0.999373, -0.00429738, 1.37077, 0.0152703)
 
 [node name="secondary" parent="Player3D/VRM_Visuals" index="7"]
 update_secondary_fixed = true
@@ -1786,9 +1786,6 @@ libraries = {
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Player3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0426446, 0.836898, -0.0266787)
 shape = SubResource("CapsuleShape3D_oxsfh")
-
-[node name="CameraMount" type="Marker3D" parent="Player3D"]
-transform = Transform3D(-0.998656, 0, -0.0518306, 0, 1, 0, 0.0518306, 0, -0.998656, 0.126201, 1.16061, -1.08989)
 
 [node name="BodyPlayer" type="AnimationPlayer" parent="Player3D"]
 root_node = NodePath("../VRM_Visuals")
