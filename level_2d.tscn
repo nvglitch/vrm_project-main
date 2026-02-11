@@ -1,0 +1,54 @@
+[gd_scene load_steps=7 format=3 uid="uid://bbca21vp7aup1"]
+
+[ext_resource type="Texture2D" uid="uid://bffo3fx1i3ifx" path="res://2dresource/1fadb27c3adec075fdf7b2e75116464f7c21d8c86dcc-9leFwZ.jpg" id="1_m83ji"]
+[ext_resource type="Texture2D" uid="uid://bl4jrqcjvt41j" path="res://2dresource/spr.png" id="2_i3eaj"]
+[ext_resource type="Script" uid="uid://kvvc5uicpxs2" path="res://player_2d.gd" id="2_smtoj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m83ji"]
+size = Vector2(644.783, 70.606)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_smtoj"]
+size = Vector2(53, 106)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1dwnu"]
+size = Vector2(30, 586)
+
+[node name="Level_2D" type="Node2D"]
+position = Vector2(-2, -3)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 626.0
+offset_bottom = 563.0
+scale = Vector2(1.84, 1.32)
+texture = ExtResource("1_m83ji")
+
+[node name="Floor" type="StaticBody2D" parent="."]
+scale = Vector2(1.84, 1.32)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor"]
+position = Vector2(312.391, 453.333)
+shape = SubResource("RectangleShape2D_m83ji")
+
+[node name="Player2D" type="CharacterBody2D" parent="."]
+script = ExtResource("2_smtoj")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player2D"]
+position = Vector2(91, 506)
+scale = Vector2(0.292538, 0.292538)
+texture = ExtResource("2_i3eaj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player2D"]
+position = Vector2(91.5, 507)
+shape = SubResource("RectangleShape2D_smtoj")
+
+[node name="Wall1" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall1"]
+position = Vector2(5, 283)
+shape = SubResource("RectangleShape2D_1dwnu")
+
+[node name="Wall2" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall2"]
+position = Vector2(1148, 286)
+shape = SubResource("RectangleShape2D_1dwnu")
