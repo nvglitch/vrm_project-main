@@ -29,7 +29,7 @@ func _physics_process(delta):
 
 	# 3. 获取输入 (WASD)
 	# 请确保你在 Project Settings -> Input Map 里设置好了 move_forward 等按键
-	var input_dir = Input.get_vector("move_left", "move_right", "move_forward", "move_back")
+	var input_dir = -Input.get_vector("move_left", "move_right", "move_forward", "move_back")
 	
 	# 4. 【核心】计算移动方向 (基于摄像机视角)
 	var direction = Vector3.ZERO

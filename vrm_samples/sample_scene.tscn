@@ -1705,7 +1705,6 @@ script = ExtResource("1_w5qep")
 [node name="VRM_Visuals" parent="Player3D" instance=ExtResource("2_oxsfh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.137315, 0, -0.0136868)
 update_secondary_fixed = true
-disable_colliders = true
 override_springbone_center = true
 update_in_editor = true
 spring_bones = Array[ExtResource("3_w5qep")]([SubResource("Resource_od8gd"), SubResource("Resource_dyitq"), SubResource("Resource_gd4ct"), SubResource("Resource_t7how"), SubResource("Resource_mh2i4"), SubResource("Resource_yiowk"), SubResource("Resource_qr2jo"), SubResource("Resource_w7gy6"), SubResource("Resource_yrvkx"), SubResource("Resource_7d058"), SubResource("Resource_g4s06"), SubResource("Resource_b180w"), SubResource("Resource_a5x02"), SubResource("Resource_x1ui2"), SubResource("Resource_7oprx"), SubResource("Resource_ffvc0"), SubResource("Resource_8jtmw"), SubResource("Resource_5nwyb"), SubResource("Resource_v5lpd"), SubResource("Resource_yomw0"), SubResource("Resource_feje5"), SubResource("Resource_cfkvy"), SubResource("Resource_n01m0"), SubResource("Resource_ldsdk"), SubResource("Resource_6qgib"), SubResource("Resource_u2c7k"), SubResource("Resource_0uj18"), SubResource("Resource_6haqw")])
@@ -1770,11 +1769,10 @@ bones/219/rotation = Quaternion(0.0105706, 0.683322, -0.729439, -0.029654)
 bones/220/rotation = Quaternion(-5.27551e-08, 0.997981, 0.0635122, -1.0823e-08)
 
 [node name="Head" parent="Player3D/VRM_Visuals/Armature_POPY/GeneralSkeleton" index="15"]
-transform = Transform3D(0.998188, -0.048673, -0.035385, 0.0487507, 0.99881, 0.00133428, 0.0352779, -0.00305691, 0.999373, -0.00429738, 1.37077, 0.0152703)
+transform = Transform3D(0.998188, -0.0486729, -0.0353851, 0.0487505, 0.99881, 0.00133409, 0.0352781, -0.0030567, 0.999373, -0.00429735, 1.37077, 0.0152704)
 
 [node name="secondary" parent="Player3D/VRM_Visuals" index="7"]
 update_secondary_fixed = true
-disable_colliders = true
 override_springbone_center = true
 update_in_editor = true
 collider_groups = Array[ExtResource("4_0g8rx")]([SubResource("Resource_cxv5m"), SubResource("Resource_1a7a6"), SubResource("Resource_4iwef"), SubResource("Resource_mav74"), SubResource("Resource_vfucu"), SubResource("Resource_oig4w"), SubResource("Resource_m4y3t"), SubResource("Resource_1a4td")])
